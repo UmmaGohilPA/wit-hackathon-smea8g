@@ -1,22 +1,58 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import './Tab3.css';
+import {
+  IonCard,
+  IonCardContent,
+  IonCardHeader,
+  IonCardSubtitle,
+  IonCardTitle,
+  IonCol,
+  IonContent,
+  IonHeader,
+  IonPage,
+  IonRow,
+  IonTitle,
+  IonToolbar,
+} from "@ionic/react";
+import Image from "../images/image.png";
+import ExploreContainer from "../components/ExploreContainer";
+import "./Tab3.css";
 
 const Tab3: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab 3</IonTitle>
+          <IonTitle>Shop Explorer</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Tab 3</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer name="Tab 3 page" />
+        <img src={Image} width="50%" height="60%" />
+
+        <IonRow>
+          <IonCol>
+            <IonCard>
+              <IonCardHeader>
+                <IonCardTitle>Lidl</IonCardTitle>
+              </IonCardHeader>
+              <IonCardContent>[helper text]</IonCardContent>
+            </IonCard>
+          </IonCol>
+          <IonCol>
+            <IonCard>
+              <IonCardHeader>
+                <IonCardTitle>Tesco</IonCardTitle>
+              </IonCardHeader>
+              <IonCardContent>[helper text]</IonCardContent>
+            </IonCard>
+          </IonCol>
+          <IonCol>
+            <IonCard>
+              <IonCardHeader>
+                <IonCardTitle>Iceland</IonCardTitle>
+              </IonCardHeader>
+              <IonCardContent>[helper text]</IonCardContent>
+            </IonCard>
+          </IonCol>
+        </IonRow>
       </IonContent>
     </IonPage>
   );

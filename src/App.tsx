@@ -42,38 +42,35 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
-          <Route exact path="/tab1">
+          <Route exact path="/">
             <Tab1 />
           </Route>
-          <Route exact path="/tab2">
+          <Route exact path="/recipes">
             <Tab2 />
           </Route>
-          <Route path="/tab3">
+          <Route path="/shop-explorer">
             <Tab3 />
           </Route>
-          <Route path="/tab4">
+          <Route path="/shopping-list">
             <Tab4 />
-          </Route>
-          <Route exact path="/">
-            <Redirect to="/tab1" />
           </Route>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
-          <IonTabButton tab="tab1" href="/tab1">
+          <IonTabButton tab="tab1" href="/">
             <IonIcon icon={triangle} />
-            <IonLabel>Tab 1</IonLabel>
+            <IonLabel>Home</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab2" href="/tab2">
+          <IonTabButton tab="tab2" href="/recipes">
             <IonIcon icon={ellipse} />
-            <IonLabel>Tab 2</IonLabel>
+            <IonLabel>Recipes</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
+          <IonTabButton tab="tab3" href="/shop-explorer">
             <IonIcon icon={square} />
-            <IonLabel>Tab 3</IonLabel>
+            <IonLabel>Shop Explorer</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab4" href="/tab4">
+          <IonTabButton tab="tab4" href="/shopping-list">
             <IonIcon icon={triangle} />
-            <IonLabel>Tab 4</IonLabel>
+            <IonLabel>Shopping List</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
