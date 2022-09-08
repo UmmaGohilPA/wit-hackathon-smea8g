@@ -23,7 +23,7 @@ const Tab3: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
-        <img src={Image} alt="map" width="50%" height="60%" />
+        <img src={Image} alt="map" width="100%" height="60%" />
 
         <IonRow>
           <IonCol>
