@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "wit-hackathon",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}

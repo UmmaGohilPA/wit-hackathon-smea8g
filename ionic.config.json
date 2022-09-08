@@ -1,0 +1,8 @@
+{
+  "name": "wit-hackathon",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react",
+  "id": "d57b1774"
+}
