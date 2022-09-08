@@ -17,7 +17,7 @@ const Tab4: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
-        <img src={PageFour} />
+        <img src={PageFour} alt="page four" />
       </IonContent>
     </IonPage>
   );
